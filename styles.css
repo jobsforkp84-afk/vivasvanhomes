@@ -55,18 +55,21 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    padding-left: 1rem;
+    flex: 0 0 auto;
 }
 
 .logo-image {
-    height: 100px;
+    height: 130px;
     width: auto;
-    max-width: 400px;
+    max-width: 500px;
     object-fit: contain;
     display: block;
 }
@@ -85,6 +88,24 @@ body {
     color: #f97316;
     margin: 0;
     display: none;
+}
+
+.nav-center-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.center-image {
+    height: 80px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-menu {
@@ -685,9 +706,22 @@ html {
         font-size: 2.5rem;
     }
     
+    .logo {
+        padding-left: 0.5rem;
+    }
+    
     .logo-image {
-        height: 75px;
-        max-width: 300px;
+        height: 90px;
+        max-width: 350px;
+    }
+
+    .nav-center-image {
+        display: flex;
+    }
+
+    .center-image {
+        height: 60px;
+        max-width: 150px;
     }
 
     .hamburger {
@@ -897,9 +931,22 @@ html {
         font-size: 2rem;
     }
     
+    .logo {
+        padding-left: 0.5rem;
+    }
+    
     .logo-image {
-        height: 60px;
-        max-width: 250px;
+        height: 75px;
+        max-width: 300px;
+    }
+
+    .nav-center-image {
+        display: flex;
+    }
+
+    .center-image {
+        height: 50px;
+        max-width: 120px;
     }
 
     .hero {
